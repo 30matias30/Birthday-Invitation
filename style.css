@@ -8,23 +8,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: yellowgreen;
 }
 
 
 
-.header-content {
-    width: 90%;
-    height: 3em;
-    /* background-image: url(./picture/SVG/Recurso\ 1.svg);
-    background-size: contain;
-    background-repeat: no-repeat; */
+.header-content img {
+    width: 100%;
+    height: 100%;
+}
 
+.header-content img {
+    position: absolute;
+    scale: 50%;
+    top: -250px;
 }
 
 .right img {
     transform: rotateZ(180deg);
+    left: 100px;
 }
 
-.header-content .left {
-    padding-right: -100px;
+.left img {
+    left: -120px;
+}
+
+/* SIDE CONTENT */
+
+.side-content img {
+    width: 100%;
+    height: 100%;   
+    
+}
+
+.side-content img {
+    scale: 40%;
+    position: absolute;
+    top: -250px;
+}
+
+.right-side img {
+    transform: rotateY(180deg);
+}
+
+#body {
+    background-color: dodgerblue;
+}
+
+#footer {
+    background-color: rebeccapurple;
 }
