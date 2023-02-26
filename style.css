@@ -1,6 +1,9 @@
 * {
-    outline: auto red;
+    /* outline: auto red; */
+    margin: 0;
 }
+
+/* HEADER CONTENT */
 
 #header {
     width: 100%;
@@ -8,9 +11,50 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 
+.header-content {
+    height: 100%;
+    width: 50%;
+}
+
+.header-content img {
+    object-fit: fill;
+}
+
+.right img {
+    transform: rotateZ(180deg);
+    margin-left: -1em;
+}
+
+.left img {
+    margin-right: -1em;
+}
+
+/* SIDE CONTENT */
+
+#sider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+.side-content {
+    width: 30%;
+    margin-top: calc(-20%);
+    
+}
+
+.side-content img {
+    object-fit: cover;
+    
+}
+
+.left-side img {
+    transform: rotateY(180deg);
+}
 
 
 
