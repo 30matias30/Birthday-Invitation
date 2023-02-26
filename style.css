@@ -1,6 +1,13 @@
+:root {
+    --color-backgroud: #f8f4ee;
+    --color-one: linear-gradient(to bottom, #3c444c 0%, #f8f4ee 100%);
+    background-color: var(--color-backgroud);
+}
+
 * {
-    /* outline: auto red; */
+    outline: auto red;
     margin: 0;
+    
 }
 
 /* HEADER CONTENT */
@@ -11,12 +18,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: yellowgreen; */
+    background: var(--color-one);
 }
 
 .header-content {
     height: 100%;
     width: 50%;
+    z-index: 10;
 }
 
 .header-content img {
@@ -43,7 +51,8 @@
 
 .side-content {
     width: 30%;
-    margin-top: calc(-20%);
+    margin-top: calc(-25%);
+    z-index: 1;
     
 }
 
