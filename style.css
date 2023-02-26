@@ -5,11 +5,13 @@
     --font-body: 'Bad Script', cursive;
     --font-title: 'Fasthand', cursive;;
     background-color: var(--color-backgroud);
+    
 }
 
 * {
     /* outline: auto red; */
     margin: 0;
+    
 }
 
 /* HEADER CONTENT */
@@ -70,10 +72,21 @@
 /* BODY CONTENT */
 
 #body {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
     /* background-color: dodgerblue; */
 }
 
-/* FIRST PARAGRAPH */
+/* PARAGRAPHS */
+
+.paragraph {
+    font-family: var(--font-body);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 3rem;
+}
 
 .first-paragraph {
     display: flex;
@@ -84,10 +97,84 @@
     
 }
 
+.second-paragraph {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    /* outline: auto red; */
+}
+
+.second-paragraph div {
+    display: flex;
+    flex-flow: column;
+    /* outline: auto blue; */
+}
+
+.second-paragraph div div {
+    /* outline: auto yellow; */
+    display: flex;
+    align-items: center;
+}
 
 
+
+
+/* DIVISORES */
+
+.separador {
+    content: "";
+    height: 6em;
+    width: 2px;
+    background-color: black;
+    margin: 1em;
+}
+
+
+/* BUTTON */
+
+.button{
+    background-color: rgba(0, 0, 0, 0);
+    color: yellowgreen;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+.button:hover{
+    background-color: blue;
+    color: black;
+    
+}
 
 #footer {
-    height: 1rem;
+    height: 4rem;
     background: var(--color-footer);
+    display: flex;
+    justify-content: center;
+    outline: auto red;
 }
+
+.footer-content {
+    height: 100%;
+    width: 40%;
+    /* z-index: 10; */
+    /* outline: auto red; */
+}
+
+.footer-content img {
+    object-fit: fill;
+    margin-top: -3rem;
+}
+
+.left-footer img {
+    transform: rotateY(180deg);
+}
+
+.right-footer img {
+    transform: rotate3d(180, 200, 0);
+
+}
+
