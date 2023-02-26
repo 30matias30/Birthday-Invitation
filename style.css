@@ -1,6 +1,7 @@
 :root {
     --color-backgroud: #f8f4ee;
-    --color-one: linear-gradient(to bottom, #3c444c 0%, #f8f4ee 100%);
+    --color-header: linear-gradient(to bottom, #3c444c 0%, #f8f4ee 100%);
+    --color-footer: linear-gradient(to top, #3c444c 0%, #f8f4ee 100%);
     --font-body: 'Bad Script', cursive;
     --font-title: 'Fasthand', cursive;;
     background-color: var(--color-backgroud);
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-one);
+    background: var(--color-header);
 }
 
 .header-content {
@@ -87,5 +88,6 @@
 
 
 #footer {
-    background-color: rebeccapurple;
+    height: 1rem;
+    background: var(--color-footer);
 }
