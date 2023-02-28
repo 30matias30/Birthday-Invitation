@@ -55,17 +55,21 @@ p {
     transition: 500ms;
 }
 
-/* FORM WINDDOW */
+/* FORM CONTENT */
 
 .form-content {
-    /* height: ;
-    width: ; */
+    width: 50%;
+    
     background: var(--color-backgroud);
 
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items:center;
+
+    padding: 3vh;
+
+    border-radius: 5% 0;
 
 }
 
@@ -78,4 +82,17 @@ p {
 
     justify-content: space-between;
     align-items: center;
+}
+
+/* FORM BODY */
+
+.form-body {
+    width: 80%;
+}
+
+.form-body form div {
+    display: flex;
+    flex-flow: column;
+    padding: 1vh;
+
 }
