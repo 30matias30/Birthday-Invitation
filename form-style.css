@@ -1,0 +1,81 @@
+:root {
+    --color-backgroud: #f8f4ee;
+    --color-header: linear-gradient(to bottom, #3c444c 0%, #f8f4ee 100%);
+    --color-footer: linear-gradient(to top, #3c444c 0%, #f8f4ee 100%);
+    --font-body: 'Bad Script', cursive;
+    --font-title: 'Rouge Script', cursive;
+    background-color: var(--color-backgroud);
+    --fill-layer-image-opacity: 0.25;
+
+}
+
+p {
+    font-size: small;
+}
+
+.form-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+
+    display: flex;
+
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--txt);
+    font-size: 1em;
+
+}
+
+.form-window.show {
+    display: flex;
+    padding: 50px;
+}
+
+.send-button button {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+/* CLOSE BUTTON */
+
+#close-form {
+    height: 5vh;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#close-form:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+/* FORM WINDDOW */
+
+.form-content {
+    /* height: ;
+    width: ; */
+    background: var(--color-backgroud);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+/* FORM HEADER */
+
+.form-header {
+    display: flex;
+
+    width: 90%;
+
+    justify-content: space-between;
+    align-items: center;
+}

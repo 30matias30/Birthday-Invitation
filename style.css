@@ -91,7 +91,7 @@ body {
     /* background-color: dodgerblue; */
 }
 
-/* FIRST PARAGRAPHS */
+/* PARAGRAPHS */
 
 .paragraph {
     font-family: var(--font-body);
@@ -101,9 +101,11 @@ body {
     margin: 3rem;
     background-color: var(--color-backgroud);
     box-shadow: 0 0 3em rgb(69, 69, 69);
-    width: 50%;
+    width: 90%;
     padding: 1%;
 }
+
+/* FIRST PARAGRAPHS */
 
 .first-paragraph {
     display: flex;

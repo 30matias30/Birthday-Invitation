@@ -14,7 +14,8 @@
 
     <!-- STYLE -->
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="form-style.css">
+    <link rel="stylesheet" href="./style.css">    
 
     <title>Florencia's 15s</title>
 
@@ -97,7 +98,7 @@
         <div class="fourth-paragraph paragraph">
             <h2>Queres formar parte?</h2>
             
-            <h3 class="button">Confirmar asistencia</h3>
+            <h3 id="checkForm" class="button">Confirmar asistencia</h3>
         </div>
 
     </div>
@@ -116,6 +117,65 @@
         </div>
 
     </div>
+
+    <div id="form-window" class="form-window">
+
+        <div class="form-content">
+
+            <div class="form-header">
+
+                <img id="close-form" src="./picture/SVG/close-circle-svgrepo-com.svg" alt="">
+                <p> Te espero en mi Fiesta!</p>
+
+            </div>
+
+            <div class="form-body">
+
+                <form action="">
+
+                    <div class="input">
+                        <label for="name">First name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    
+                    <div class="input">
+
+                        <p>Venís?</p>
+
+                        <input type="radio" id="si" name="viene" value="si" required>
+                        <label for="si">Si!</label><br>
+                        <input type="radio" id="no" name="viene" value="no" required>
+                        <label for="no">No...</label><br>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="dj">Queres pedirle un tema al DJ?</label>
+                        <input type="text" name="dj" id="dj" placeholder="Pedí tu tema...">
+                    </div>
+                    
+                    <div class="input">
+                        <label for="phone-number">Número de contacto</label>
+                        <input type="text" name="phone-number" id="phone-number" minlength="8" maxlength="15" required>
+                    </div>
+
+                    <div class="form-footer">
+
+                        <button class="button" type="submit">Enviar</button>
+        
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <script src="./show-scrypt.js"></script>
     
 </body>
 </html>
