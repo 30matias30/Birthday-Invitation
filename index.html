@@ -14,8 +14,10 @@
 
     <!-- STYLE -->
 
-    <link rel="stylesheet" href="form-style.css">
-    <link rel="stylesheet" href="./style.css">    
+    <link rel="stylesheet" href="./form-style.css">
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./timer-style.css">
+    <link rel="stylesheet" href="./joke-style.css">   
 
     <title>Florencia's 15s</title>
 
@@ -55,14 +57,19 @@
 
     <div id="body">
         
+        <h2 style="margin-bottom: 20Px;">LLEGÓ EL DÍA!</h2>
 
-        <div class="first-paragraph paragraph">
+        <br>
 
-            <h2>LLEGÓ EL DÍA!</h2>
+        <div class="first-paragraph">
+
+            
             <p>Maria Florencia</p>
-            <h2>Mi Fiesta de 15 años</h2>
+            
 
         </div>
+        
+        <h2>Mi Fiesta de 15 años</h2>
 
         
         <div class="second-paragraph paragraph">
@@ -71,12 +78,33 @@
 
             <div>
 
-            <div><h2>¿Cuándo?</h2></div>
-            <div><h3>El día 25 de marzo a las 21:30 horas</h3></div>
+                <div><h2>¿Cuándo?</h2></div>
+                <div>
+                    <h3>El día 25 de marzo</h3>
+                    <h3>desde las 21:30 horas</h3>
+                    <abbr title="Hasta las 4:30 horas"><h3>hasta que nos cansemos</h3></abbr>
+                </div>
+
+                <br>
+
+                <div class="timer">
+                    <h1 style="font-weight: bolder;" id="headline">¿Estás preparado?</h1>
+                    <div id="countdown">
+                    <ul>
+                        <li><span id="days"></span>Días</li>
+                        <li><span id="hours"></span>Horas</li>
+                        <li><span id="minutes"></span>Minutos</li>
+                        <li><span id="seconds"></span>Segundos  </li>
+                    </ul>
+                    </div>
+
+                </div>
 
             </div>
-            
-            <div class="separador"></div>
+
+        </div>
+
+        <div class="third-paragraph paragraph">
 
             <img src="./picture/SVG/map-svgrepo-com.svg" alt="">
 
@@ -85,20 +113,19 @@
             <div><h2>¿Dónde?</h2></div>
             <div><h3>En el <a href="https://goo.gl/maps/5qjtArJyjMibqRpFA">Salón la Ribera</a>, Jesús María, Córdoba </h3></div>
 
+            <br>
+
             </div>
 
-        </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13683.835903384008!2d-64.0938919!3d-30.971627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432634e3855e2c9%3A0x5a0bced190c44d7c!2sLa%20Ribera!5e0!3m2!1ses!2sar!4v1677427270923!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <div class="third-paragraph paragraph">
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13683.835903384008!2d-64.0938919!3d-30.971627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432634e3855e2c9%3A0x5a0bced190c44d7c!2sLa%20Ribera!5e0!3m2!1ses!2sar!4v1677427270923!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
         </div>
 
         <div class="fourth-paragraph paragraph">
             <h2>Queres formar parte?</h2>
             
             <h3 id="checkForm" class="button">Confirmar asistencia</h3>
+
         </div>
 
     </div>
@@ -150,11 +177,11 @@
 
                         <div>
                         <input class="radio" type="radio" id="si" name="viene" value="si" required>
-                        <label for="si">Si!</label>
+                        <label for="si">Sí</label>
                         </div>
                         <div>
                         <input class="radio" type="radio" id="no" name="viene" value="no" required>
-                        <label for="no">No...</label>
+                        <label for="no">No</label>
                         </div>
 
                     </div>
@@ -187,6 +214,7 @@
     </div>
 
     <script src="./show-scrypt.js"></script>
+    <script src="./timer-scrypt.js"></script>
     
 </body>
 </html>

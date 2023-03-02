@@ -1,0 +1,68 @@
+:root {
+  --color-backgroud: #f8f4ee;
+  --color-header: linear-gradient(to bottom, #3c444c 0%, #f8f4ee 100%);
+  --color-footer: linear-gradient(to top, #3c444c 0%, #f8f4ee 100%);
+  /* --font-body: 'Bad Script', cursive; */
+  --font-body: 'Carter One', cursive;
+  --font-title: 'Rouge Script', cursive;
+  background-color: var(--color-backgroud);
+  --fill-layer-image-opacity: 0.25;
+
+}
+
+
+.timer {
+    display: flex;
+
+    width: fit-content;
+
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-family: var(--font-body);  
+  }
+
+  #headline {
+    font-size: 1.5em;
+  }
+
+  #countdown {
+    /* outline: auto aqua; */
+    width: fit-content;
+  }
+
+  h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+    flex-shrink: 1; 
+  }
+  
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }

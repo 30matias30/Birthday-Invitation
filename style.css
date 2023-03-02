@@ -2,7 +2,8 @@
     --color-backgroud: #f8f4ee;
     --color-header: linear-gradient(to bottom, #3c444c 0%, #f8f4ee 100%);
     --color-footer: linear-gradient(to top, #3c444c 0%, #f8f4ee 100%);
-    --font-body: 'Bad Script', cursive;
+    /* --font-body: 'Bad Script', cursive; */
+    --font-body: 'Carter One', cursive;
     --font-title: 'Rouge Script', cursive;
     background-color: var(--color-backgroud);
     --fill-layer-image-opacity: 0.25;
@@ -98,7 +99,8 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     background-color: var(--color-backgroud);
     box-shadow: 0 0 3em rgb(69, 69, 69);
     width: 90%;
@@ -110,24 +112,23 @@ body {
 .first-paragraph {
     display: flex;
     flex-flow: column;
-    align-items: center;   
+    justify-content: center;
+    /* align-items: center;    */
     margin-top: calc(-10%);
     font-family: var(--font-body);
-
-
-    width:fit-content;
-    border-radius: 50%;
     
 }
 
-.first-paragraph h2 {
+/* .first-paragraph h2 {
     padding: 1em;
-}
+} */
 
 .first-paragraph p {
-    font-size: 10ch;
+    font-size: 5ch;
     font-family: var(--font-title);
-    padding: 1em;
+    /* padding: 1em; */
+    display: flex;
+
 }
 
 
@@ -139,6 +140,7 @@ body {
 }
 
 .second-paragraph div {
+    width: 100%;
     display: flex;
     flex-flow: column;
     /* outline: auto blue; */
@@ -158,41 +160,38 @@ body {
 
 .third-paragraph {
     display: flex;
-    flex-flow: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
     /* width: 100%; */
 }
 
-.third-paragraph div {
-    height: 3vh;
-    width: 3vh;
+.third-paragraph img {
+    height: 4rem;
 }
 
-.third-paragraph div img {
-    object-fit: fill;
+.third-paragraph div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.third-paragraph div div {
+    width:fit-content;
+}
+
+iframe {
+    width: 95%;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.4);
+    border-radius: 5%;
 }
 
 /* FOURTH PARAGRAPH */
 
 .fourth-paragraph {
-    width: 50%;
-    padding: 1%;    
+margin: 0;
 }
-
-
-
-
-/* DIVISORES */
-
-.separador {
-    content: "";
-    height: 2PX;
-    width: 6em;
-    background-color: #b4bcbc;
-    margin: 1em;
-}
-
 
 /* BUTTON */
 

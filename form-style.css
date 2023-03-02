@@ -2,7 +2,8 @@
     --color-backgroud: #f8f4ee;
     --color-header: linear-gradient(to bottom, #3c444c 0%, #f8f4ee 100%);
     --color-footer: linear-gradient(to top, #3c444c 0%, #f8f4ee 100%);
-    --font-body: 'Bad Script', cursive;
+    /* --font-body: 'Bad Script', cursive; */
+    --font-body: 'Carter One', cursive;
     --font-title: 'Rouge Script', cursive;
     background-color: var(--color-backgroud);
     --fill-layer-image-opacity: 0.25;
@@ -11,6 +12,16 @@
 
 p {
     font-size: small;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 200;
 }
 
 .form-window {
@@ -151,24 +162,15 @@ input:focus{
 /* Venis? */
 
 #venis-option div {
-
-
 display: flex;
 flex-flow: row;
-
-}
-
-
-form div {
-    /* outline: auto red; */
 }
 
 form div label {
-
     padding-left: 5px;
-    /* outline: auto green; */
 }
 
-form div input {
-    /* outline: auto blue; */
+abbr {
+    color: rgba(2, 2, 2, 0.9);
+    text-decoration: none;
 }
