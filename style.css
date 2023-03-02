@@ -231,7 +231,7 @@ body {
 .footer-content {
     height: 100%;
     width: 20%;
-    /* z-index: 10; */
+    z-index: 10;
     /* outline: auto red; */
 }
 
@@ -241,6 +241,7 @@ body {
 
 .left-footer img {
     transform: rotateY(180deg);
+    
 }
 
 .right-footer img {

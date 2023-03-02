@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Fasthand&family=Rouge+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Carter+One&family=Rouge+Script&display=swap" rel="stylesheet">
     
 
     <!-- STYLE -->
@@ -126,7 +126,7 @@
             <div class="form-header">
 
                 <img id="close-form" src="./picture/SVG/close-circle-svgrepo-com.svg" alt="">
-                <p> Te espero en mi fiesta!</p>
+                <p><span><img id="balon-svg" src="./picture/SVG/balon-birthday-gift-gift-box-party-svgrepo-com.svg" alt=""></span> Te espero en mi fiesta! <span><img id="drink-svg" src="./picture/SVG/birthday-cup-drink-glass-wine-svgrepo-com.svg" alt=""></span></p>
 
             </div>
 
@@ -139,23 +139,29 @@
                     <input type="hidden" name="_template" value="table">
 
                     <div class="input">
-                        <label for="name">First name</label>
+                        <label for="name">Nombre</label>
                         <input type="text" name="name" id="name" required>
                     </div>
                     
-                    <div class="input">
+                    <div id="venis-option" class="input">
 
-                        <p>Venís?</p>
+                        <p>¿Venís?</p>
 
-                        <input type="radio" id="si" name="viene" value="si" required>
-                        <label for="si">Si!</label><br>
-                        <input type="radio" id="no" name="viene" value="no" required>
-                        <label for="no">No...</label><br>
+
+                        <div>
+                        <input class="radio" type="radio" id="si" name="viene" value="si" required>
+                        <label for="si">Si!</label>
+                        </div>
+                        <div>
+                        <input class="radio" type="radio" id="no" name="viene" value="no" required>
+                        <label for="no">No...</label>
+                        </div>
+
                     </div>
                     
                     <div class="input">
-                        <label for="dj">Queres pedirle un tema al DJ?</label>
-                        <input type="text" name="dj" id="dj" placeholder="Pedí tu tema...">
+                        <label for="dj">¿Queres pedirle un tema al DJ? Hacelo ahora!</label>
+                        <input type="text" name="dj" id="dj">
                     </div>
                     
                     <div class="input">
