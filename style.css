@@ -156,6 +156,10 @@ body {
     height: 4rem;
 }
 
+#joke {
+    color: rgb(0, 0, 0, 0.2);
+}
+
 /* THIRD PARAGRAPH */
 
 .third-paragraph {
@@ -225,7 +229,7 @@ margin: 0;
     height: 4rem;
     background: var(--color-footer);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* outline: auto green; */
     }
 
@@ -259,4 +263,32 @@ margin: 0;
 #salonLaRibera:hover {
     color: #3c444c93;
     transition: 300ms;
+}
+
+
+
+#agradecimiento {
+    display: flex;
+    align-items: center;
+
+    font-family: var(--font-body);
+    font-size: small;
+    color: rgb(0, 0, 0, 0.2);
+
+}
+
+#agradecimiento a {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    
+    font-weight: 100;
+    color: rgb(0, 0, 0, 0.2);
+    font-family: 'Carter One', cursive;
+
+}
+
+#santyLogo {
+    width: 1em;
+    margin-left: 2px;
 }
