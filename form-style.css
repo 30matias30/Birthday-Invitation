@@ -48,6 +48,8 @@ p {
     height: 5vh;
     cursor: pointer;
     transition: 500ms;
+
+    flex-shrink: 5;
 }
 
 #close-form:hover {
@@ -104,6 +106,7 @@ p {
 .form-header p {
     font-family: 'Carter One', cursive;
     font-weight: 100;
+    flex-shrink: 0;
 }
 
 .form-header img {
@@ -122,9 +125,9 @@ p {
 
 .form-body {
     width: 80%;
-    background-color: rgb(255, 255, 255, 0.1);
+    /* background-color: rgb(255, 255, 255, 0.1);
     box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.4);
-    border-radius: 5%;
+    border-radius: 5%; */
 }
 
 .form-body form div {
